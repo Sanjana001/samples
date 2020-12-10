@@ -1,2 +1,1 @@
-This folder represents a webpage which shows all the information about covid-19 in India from 29 March to 5 April.
-Maybe this webpage contains some problems/errors in css but it will still in working position. I am tring to sort out these problems/errors immediately.
+This folder represents a webpage which shows all the information about active cases, recovered cases and confirmed cases of covid-19 in India from 29 March to 5 April.
