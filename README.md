@@ -1,2 +1,3 @@
 This is not a project related repository but a repository which contains all my past works and assignments.
 In this repository I have included some of assignments which I made around 6-7 months ago when I was just starting learning web development i.e html, css and  a little javascript.
+As I told you that this repository contains my assignments it means that in this repository I include different different webpages in the different folders.
