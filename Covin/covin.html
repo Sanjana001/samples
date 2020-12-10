@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first webpage</title>
+    <script type="text/javascript">
+    	function myfunction()
+    	{
+    	alert("Welcome to my webpage.");
+        }
+        function myselect()
+        {
+        	var i;
+        	var text="<ul>";
+        	var x=document.getElementById("result").value;
+        	if(x=="What do you want to learn")
+        		alert("Please choose a valid option");
+        	else if(x=="Origin")
+        	{
+        		document.getElementById("output").innerHTML="This virus was originated from Wuhan which is situated in China. It had reported its first case on December 2019. It is an infectious disease which is caused by the virus <strong>SARS-CoV2</strong>. This virus belongs to the family of coronaviruses which has come from animals. SARS in 2002 which had come from sivet cats and MERS which had come from camels are also the members of this family. There are so much rumours about the origin of this virus like some said that this virus has come from bats whereas others say that this virus was bioengineered as a bioweapon in the Wuhan Institue of Virlogy etc."
+        	}
+        	else if(x=="How it spreads")
+        	{
+        		document.getElementById("output").innerHTML="As this is an infectious disease it spreads through the droplets of cough or sneeze. This virus is also transmitted through touching the surface or objects around the infected person or coming into the contact with the infected person. Close contact includes the distance which is less than 6feet."
+        	}
+        	else if(x=="Symptoms")
+        	{
+        		var array=["Cough","Sore Throat","Tiredness","Difficulty breathing(severe cases)"];
+        		for(i=0;i<array.length;i++)
+        		{
+        			text+= '<li>' + array[i] + '</li>';
+        		}
+        		text+='</ul>'
+        		document.getElementById("output").innerHTML=text;
+        	}
+        	else if(x=="Precautions")
+        	{
+        		var array1=["Wash your hands for atleast 20 seconds.","Avoid touching your eyes, nose and mouth.","Cover your cough or sneeze with a tissue and dispose it properly.","Avoid to come in contact with the people who are sick.","Stay home when you are sick.","If you are sick then immediately consult with the doctors."];
+        		for(i=0;i<array1.length;i++)
+        		{
+        			text+= '<li>' + array1[i] +'</li>';
+        		}
+        		text+='</ul>'
+        		document.getElementById("output").innerHTML=text;
+        	}
+        }
+         function myprompt()
+         {
+         	var name=prompt("Please enter your name","Sonu");
+         	if(name=="")
+         	alert("Please enter a valid name");
+            else
+         	alert("Thank you "+name+" for visiting my webpage. Stay safe,Stay home.");
+         }
+        function checkmessage1(s)
+        {
+        	var y=document.getElementById("field1").value;
+        	if(y=="March" || y=="march" || y=="MARCH")
+        	{
+        		if(s==29)
+                alert("On March 29 India had reported around <strong>1,024</strong> cases with <strong>27</strong> death cases and <strong>95</strong> recovered cases.");
+                else if(s==30)
+                alert("On March 30 India had reported around <strong>1,071</strong> cases with <strong>29</strong> death cases and <strong>100</strong> recovered cases.");
+                else if(s==31)
+                alert("On March 31 India had reported around <strong>1,251</strong> cases with <strong>32</strong> death cases and <strong>102</strong> recovered cases.");
+        	}
+        	else if(y=="April" ||y=="april" || y=="APRIL")
+        	{
+                if(s==1)
+        		alert("On 1st April India had reported around <strong>1,637</strong> cases with <strong>45</strong> death cases and <strong>148</strong> recovered cases.");
+        	    else if(s==2)
+        	    alert("On 2nd April India had reported around <strong>2,341</strong> cases with <strong>68</strong> death cases and <strong>177</strong> recovered cases.");
+        	    else if(s==3)
+        	    alert("On 3rd April India had reported around <strong>2,567</strong> cases with <strong>72</strong> death cases and <strong>192</strong> recovered cases.");
+        	     else if(s==4)
+        	    alert("On 4th April India had reported around <strong>3,082</strong> cases with <strong>86</strong> death cases and <strong>229</strong> recovered cases.");
+        	     else if(s==5)
+        	     alert("On 5th April India had reported around <strong>3,580</strong> cases with <strong>83</strong> death cases and <strong>275</strong> recovered cases.");
+        	}
+        	else
+        	{
+        		document.getElementById("message1").innerHTML="Not Acceptable";
+            	alert("Please enter the date between 29 March to 5 April");
+        	}
+        }
+        function checkmessage()
+        {
+        	var x=document.getElementById("field").value;
+        	var y=document.getElementById("field1").value;
+        	if(x>=29 || x<=5)
+        	{
+               if(y=="March")
+               {
+               	if(x==29)
+                document.getElementById("output1").innerHTML="On March 29 India had reported around 1,024 cases with 27 death cases and 95 recovered cases.";
+                else if(x==30)
+                document.getElementById("output1").innerHTML="On March 30 India had reported around 1,071 cases with 29 death cases and 100 recovered cases.";
+                else if(x==31)
+                document.getElementById("output1").innerHTML="On March 31 India had reported around 1,251 cases with 32 death cases and 102 recovered cases.";
+               }
+               else if(y=="April")
+               {
+               	 if(x==1)
+        		document.getElementById("output1").innerHTML="On 1st April India had reported around 1,637 cases with 45 death cases and 148 recovered cases.";
+        	    else if(x==2)
+        	    document.getElementById("output1").innerHTML="On 2nd April India had reported around 2,341 cases with 68 death cases and 177 recovered cases.";
+        	    else if(x==3)
+        	    document.getElementById("output1").innerHTML="On 3rd April India had reported around 2,567 cases with 72 death cases and 192 recovered cases.";
+        	     else if(x==4)
+        	    document.getElementById("output1").innerHTML="On 4th April India had reported around 3,082 cases with 86 death cases and 229 recovered cases.";
+        	     else if(x==5)
+        	     document.getElementById("output1").innerHTML="On 5th April India had reported around 3,580 cases with 83 death cases and 275 recovered cases.";
+               }
+               else
+               alert("Please choose a valid option");
+        	}
+            else
+            {
+            	document.getElementById("message").innerHTML="Not Acceptable";
+            	alert("Please enter the number between 29 March to 5 April");
+            }
+        }
+    </script>
+</head>
+<body onload="myfunction();" background="https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-026.jpg">
+<div class="header">
+<ul style="list-style:none;float:right;">
+<li style="float:left;margin-left:15px;"><a href="gug.com">About</a></li>
+<li style="float:left;margin-left:15px;"><a href="g.com">Content</a></li>
+<li style="float:left;margin-left:15px;"><a href="ru.com">Contact Us</a></li>
+</ul>
+<h1 class="heading" style="color:red;font-size:50px;padding-top:20px;text-align:center;font-family:serif;margin-left:175px;"><u>COVIN<u></h1>
+</div>
+<p class="intro" style="color:navy;font-size:15px;font-family:cursive;float:left;"><em>COVIN is the combination of two words. In COVIN,</em><strong>COV</strong> <em>stands for the </em><strong>Coronavirus</strong> <em>and </em><strong>IN</strong> <em>stands for </em><strong>India</strong> <em>i.e.</em><br>COVIN = Coronavirus + India <br><strong>Coronavirus in India</strong></p>
+<div class="main">
+<p style="color:maroon;font-size:20px;font-family:serif;float:left;">COVID-19 is an infectious disease caused by a new virus. The first case of this virus was reported in China whereas India had reported its first case on 30 January 2020. As of 4th April around 3,072 cases are confirmed in India till now. The infection rate of this coronavirus in India is reported to be 1.7 which is significantly lower than in the worst affected countries.On 22 March 2020, India observed a 14 hour voluntary public curfew to break the chain of this virus. On 24 March,2020 our prime minister Mr. Narendra Modi ordered a nationwide lockdown for 21 days.<br> According to the recent report it is said that India could have witnessed a surge of 31,000 cases of disease between March 24 and April 14 without lockdown. It is also said this lockdown helps us to improve nature. A recent report said that a hole in the ozone layer above Antartica has continued to recover, leading to changes in atmospheric circulation. The changing wind patterns have led to the recovery of ozone layer.</p> 
+<div class="content" style="float:left;">
+	<img src="https://www.elsevier.com/__data/assets/image/0006/974328/coronavirus-image-iStock-628925532-1200px.jpg" style="width:300px;height:300px;">
+	<p class="item" style="color:fuchsia;font-size:15px;"><u>Shape of COVID-19</u></p>
+</div>
+<div class="content" style="float:left;">
+	<img src="https://cdn6.dissolve.com/p/D1243_1_109/D1243_1_109_0004_600.jpg" style="width:300px;height:300px;">
+	<p class="item" style="color:fuchsia;font-size:15px;"><u>Coronavirus in blood</u></p>
+</div>
+<div class="content" style="float:left;">
+	<img src="https://media.graytvinc.com/images/810*456/global+coronavirus1.jpg" style="width:300px;height:300px;">
+	<p class="item" style="color:fuchsia;font-size:15px;"><u>It's impact on Earth</u></p>
+</div>
+<div class="content1" style="font-size:20px;color:red;font-family:cursive;clear:both;float:left;">
+<select id="result" onchange="myselect();">
+	<option value="What do you want to learn">What do you want to learn</option>
+	<option value="Origin">Origin</option>
+	<option value="How it spreads">How it spreads</option>
+	<option value="Symptoms">Symptoms</option>
+	<option value="Precautions">Precautions</option>
+</select>
+<div id="output"></div>
+</div>
+<div class="content2">
+	<p style="color:maroon;font-size:20px;font-family:serif;padding-top:15px;clear:both;">The top 5 countries which are mostly affected by this virus are:</p>
+	<ul style="float:left;font-size:22px;color:fuchsia;">
+		<li><span style="color:purple;font-family:cursive;">USA</span> with 311,637 cases</li>
+		<li><span style="color:purple;font-family:cursive;">Spain</span> with 130,759 cases</li>
+		<li><span style="color:purple;font-family:cursive;">Italy</span> with 124,632 cases</li>
+		<li><span style="color:purple;font-family:cursive;">Germany</span> with 96,108 cases</li>
+		<li><span style="color:purple;font-family:cursive;">France</span> with 89,953 cases</li>
+	</ul>
+	<p style="color:maroon;font-size:20px;font-family:serif;float:left;">Till 5th April the number of cases across the world has marked to around 12,03,485 with 64,784 deaths. As the days passing the global death rate is incresing with decreasing the rate of recovered patients.India has reported over 3600 cases with 100 deaths. The following is the state wise report of COVID-19 cases in India:</p>
+	<table style="border:2px solid blue;font-family:cursive;">
+		<tr class="row"><td style="border:1px solid grey;padding:10px;"><u>States</u></td><td style="border:1px solid grey;padding:10px;"><u>4th April,2020</td></u><td style="border:1px solid grey;padding:10px;"><u>5th April,2020</u></td><td style="border:1px solid grey;padding:10px;"><u>States</td></u><td style="border:1px solid grey;padding:10px;"><u>4th April,2020</td></u><td style="border:1px solid grey;padding:10px;"><u>5th April,2020</td></u></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Kerala</td><td style="border:1px solid grey;padding:10px;">286</td><td style="border:1px solid grey;padding:10px;">299</td><td style="border:1px solid grey;padding:10px;">Punjab</td><td style="border:1px solid grey;padding:10px;">53</td><td style="border:1px solid grey;padding:10px;">65</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Delhi</td><td style="border:1px solid grey;padding:10px;">386</td><td style="border:1px solid grey;padding:10px;">500</td><td style="border:1px solid grey;padding:10px;">Jammu and Kashmir</td><td style="border:1px solid grey;padding:10px;">78</td><td style="border:1px solid grey;padding:10px;">92</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Rajasthan</td><td style="border:1px solid grey;padding:10px;">198</td><td style="border:1px solid grey;padding:10px;">210</td><td style="border:1px solid grey;padding:10px;">Ladakh</td><td style="border:1px solid grey;padding:10px;">13</td><td style="border:1px solid grey;padding:10px;">13</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Uttar Pradesh</td><td style="border:1px solid grey;padding:10px;">203</td><td style="border:1px solid grey;padding:10px;">242</td><td style="border:1px solid grey;padding:10px;">Maharashtra</td><td style="border:1px solid grey;padding:10px;">537</td><td style="border:1px solid grey;padding:10px;">661</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Karnataka</td><td style="border:1px solid grey;padding:10px;">128</td><td style="border:1px solid grey;padding:10px;">146</td><td style="border:1px solid grey;padding:10px;">Tamil Nadu</td><td style="border:1px solid grey;padding:10px;">411</td><td style="border:1px solid grey;padding:10px;">485</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Haryana</td><td style="border:1px solid grey;padding:10px;">59</td><td style="border:1px solid grey;padding:10px;">74</td><td style="border:1px solid grey;padding:10px;">Telangana</td><td style="border:1px solid grey;padding:10px;">237</td><td style="border:1px solid grey;padding:10px;">272</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Andhra Pradesh</td><td style="border:1px solid grey;padding:10px;">180</td><td style="border:1px solid grey;padding:10px;">226</td><td style="border:1px solid grey;padding:10px;">Himachal Pradesh</td><td style="border:1px solid grey;padding:10px;">4</td><td style="border:1px solid grey;padding:10px;">4</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Gujarat</td><td style="border:1px solid grey;padding:10px;">105</td><td style="border:1px solid grey;padding:10px;">122</td><td style="border:1px solid grey;padding:10px;">Uttarakhand</td><td style="border:1px solid grey;padding:10px;">16</td><td style="border:1px solid grey;padding:10px;">22</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Odisha</td><td style="border:1px solid grey;padding:10px;">9</td><td style="border:1px solid grey;padding:10px;">9</td><td style="border:1px solid grey;padding:10px;">West Bengal</td><td style="border:1px solid grey;padding:10px;">54</td><td style="border:1px solid grey;padding:10px;">54</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Chandigarh</td><td style="border:1px solid grey;padding:10px;">16</td><td style="border:1px solid grey;padding:10px;">16</td><td style="border:1px solid grey;padding:10px;">Chhatisgarh</td><td style="border:1px solid grey;padding:10px;">19</td><td style="border:1px solid grey;padding:10px;">19</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Bihar</td><td style="border:1px solid grey;padding:10px;">29</td><td style="border:1px solid grey;padding:10px;">32</td><td style="border:1px solid grey;padding:10px;">Madhya Pradesh</td><td style="border:1px solid grey;padding:10px;">164</td><td style="border:1px solid grey;padding:10px;">167</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Puducherry</td><td style="border:1px solid grey;padding:10px;">6</td><td style="border:1px solid grey;padding:10px;">6</td><td style="border:1px solid grey;padding:10px;">Manipur</td><td style="border:1px solid grey;padding:10px;">2</td><td style="border:1px solid grey;padding:10px;">2</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Mizoram</td><td style="border:1px solid grey;padding:10px;">1</td><td style="border:1px solid grey;padding:10px;">1</td><td style="border:1px solid grey;padding:10px;">Goa</td><td style="border:1px solid grey;padding:10px;">7</td><td style="border:1px solid grey;padding:10px;">7</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Assam</td><td style="border:1px solid grey;padding:10px;">25</td><td style="border:1px solid grey;padding:10px;">25</td><td style="border:1px solid grey;padding:10px;">Arunachal Pradesh</td><td style="border:1px solid grey;padding:10px;">1</td><td>1</td></tr>
+		<tr><td style="border:1px solid grey;padding:10px;">Jharkhand</td><td style="border:1px solid grey;padding:10px;">1</td><td style="border:1px solid grey;padding:10px;">3</td><td style="border:1px solid grey;padding:10px;">Andaman and Nicobar Islands</td><td style="border:1px solid grey;padding:10px;">10</td><td style="border:1px solid grey;padding:10px;">10</td></tr>
+	</table>
+		<p  style="color:maroon;font-size:20px;font-family:serif;float:left;">If you want to see the report of confirmed cases in India on a particular date then type the date and you will get your result.</p>
+	<div class="content3">
+		<input id="field" type="number" onblur="checkmessage();" style="float:right;border:2px solid red;"><span id="message" style="float:right;"></span>
+		<select id="field1" onchange="checkmessage();" style="float:right;border:2px solid red;">
+              <option value="Select">Select</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+        </select><br>
+		<p id="output1" style="color:red; font-family:cursive;"></p>
+	</div>
+</div>
+<div class="footer">
+ <div style="width:100%; height:100%;">
+  <button type="button" onclick="myprompt();" style="border:2px solid fuchsia;float:right;">Finish</button>
+</div>
+</div>
+</body>
+</html>
