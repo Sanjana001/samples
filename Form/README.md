@@ -1,2 +1,0 @@
-This folder represents a food ordering home specially delicious and tempting buffets at minimum prize.
-Maybe this webpage contains some problems/errors in css but it will still in working position. I am tring to sort out these problems/errors immediately.
