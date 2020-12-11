@@ -2,23 +2,7 @@
 <html>
 <head>
 <title>My First Page</title>
-<script type="text/javascript">
-	function myfunction()
-	{
-		alert("Nice to meet you!");
-	}
-	function myview()
-	{
-		var name=document.getElementById("name").value;
-		if(name=="")
-		alert("Please enter a valid name");
-	    else
-	    {
-		document.getElementById("result").innerHTML="Welcome "+name+" in this experimenting webpage. We hope you are fine.";
-		alert("Thank you "+name+" for visting our webpage!");
-	    }
-	}
-</script>
+<script type="text/javascript" src="covid19.js"></script>
 </head>
 <body onload="myfunction();" style="background-color:silver;"> 
 <input id="name" type="text"/>
