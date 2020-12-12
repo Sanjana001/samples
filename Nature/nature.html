@@ -2,27 +2,7 @@
 <html>
 <head>
 	<title>Nature</title>
-	<script type="text/javascript">
-		function myfunction()
-		{
-			var name=document.getElementById("name").value;
-			if(name=="Yes" || name=="yes" || name=="YES")
-			{
-				alert("Thank You");
-				return true;
-			}
-			else if(name=="No" || name=="NO" || name=="no")
-			{
-				alert("Sorry for dissapointing you");
-				return false;
-			}
-			else
-			{
-				alert("Please type either Yes or No");
-				return false;
-			}
-		}
-	</script>
+	<script type="text/javascript" src="nature.js"></script>
 </head>
 <body onload="alert('Welcome to this new webpage.')" background="https://media.istockphoto.com/vectors/vector-abstract-geometric-background-blue-hexagon-shape-vector-id845115022?k=6&m=845115022&s=170667a&w=0&h=OVQYzD01EZ563xcgNQiYkHBPLw_lVME_Y0zy4uqrxaY=">
 <div class="header">
@@ -74,7 +54,8 @@
 	<p style="color:purple;font-size:25px;font-family:cursive;float:left;margin-left:350px;"><b>In every walk with nature one receives more than he seeks</b></p>
 	<p style="color:green;font-size:25px;float:left;">If you like my webpage and want to know more about my page then type yes in the below input box. In the next webpage I will introduce about one of the current affairs of the world.</p>
 	<form action="text3" onsubmit="return myfunction();" style="float:right;margin-left:400px;border:3px solid maroon;">
-		<input type="text" id="name" placeholder="Yes or No" style="color:navy;text-align:center;"/>
+		<input type="text" id="name" placeholder="Yes or No" style="color:navy;text-align:center;"/><br>
+		<button type="button" onclick="myfunction()" style="width:100%;background-color: blue;color:white">Submit</button>
 	</form>
 	<ul style="float:left;list-style:none;margin-right:400px;">
 		<li ><a href="coogle.v">Details</a></li>
